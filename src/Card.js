@@ -1,15 +1,12 @@
 import React from 'react';
+import './Card.css';
 
-function Card() {
-  return (
-    <div class='Card'>
-      {<h3>
-          {[
-              <p />
-          ]}
-      </h3> }
-    </div>
-  );
+function Card(props){
+  return (<div className="Card">
+  <button type="button">delete</button>
+  <h3>{props.super}</h3> 
+  <p>{props.text}</p>
+  </div>)
 }
 
 export default Card;
